@@ -34,6 +34,7 @@ class UserShotUploader < CarrierWave::Uploader::Base
   end
   version :thumb do
     process resize_to_fit: [400, 300]
+
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
